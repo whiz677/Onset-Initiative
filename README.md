@@ -4,6 +4,18 @@ This is the website for **The Onset Initiative**, a youth-led public health educ
 
 The site is built with Next.js, React, TypeScript, and Tailwind CSS. Most content is data-driven so seminars, resources, forms, and archive links can be updated without redesigning the site.
 
+## Important: GitHub vs the live website
+
+The GitHub repository page shows this README file. That is normal.
+
+The actual public website is the Vercel deployment URL, usually something like:
+
+```txt
+https://onset-initiative.vercel.app
+```
+
+Use Vercel to host the site. GitHub stores the code; Vercel builds and publishes the website.
+
 ## Run locally
 
 Install dependencies:
