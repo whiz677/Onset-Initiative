@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const repoName = "cancer-npo";
+const repoName = "Onset-Initiative";
 
 const nextConfig: NextConfig = {
   output: "export",
