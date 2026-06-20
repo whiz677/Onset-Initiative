@@ -4,17 +4,17 @@ This is the website for **The Onset Initiative**, a youth-led public health educ
 
 The site is built with Next.js, React, TypeScript, and Tailwind CSS. Most content is data-driven so seminars, resources, forms, and archive links can be updated without redesigning the site.
 
-## Important: GitHub vs the live website
+## Important: GitHub repo vs GitHub Pages website
 
-The GitHub repository page shows this README file. That is normal.
+The normal GitHub repository page shows this README file. That is normal.
 
-The actual public website is the Vercel deployment URL, usually something like:
+The actual public website is the GitHub Pages URL, usually:
 
 ```txt
-https://onset-initiative.vercel.app
+https://whiz677.github.io/cancer-npo/
 ```
 
-Use Vercel to host the site. GitHub stores the code; Vercel builds and publishes the website.
+GitHub stores the code, and GitHub Actions builds the website into a static `out/` folder for GitHub Pages.
 
 ## Run locally
 
@@ -148,7 +148,26 @@ If all numbers are zero, the homepage says:
 Impact tracking will begin with our first seminar cycle.
 ```
 
+## Deploy to GitHub Pages
+
+1. Push the project to GitHub.
+2. Go to the GitHub repository.
+3. Open **Settings**.
+4. Open **Pages**.
+5. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+6. Push to the `main` branch.
+7. The workflow in `.github/workflows/deploy.yml` will build and publish the site.
+8. The public site will be available at:
+
+```txt
+https://whiz677.github.io/cancer-npo/
+```
+
+If you connect a custom domain later, update `metadataBase` in `src/app/layout.tsx`.
+
 ## Deploy to Vercel
+
+Vercel also works for this project, but this repository is currently configured for GitHub Pages static export.
 
 1. Push the project to GitHub.
 2. Create a new project on Vercel.
@@ -158,22 +177,19 @@ Impact tracking will begin with our first seminar cycle.
 
 ## Deploy to Netlify
 
-1. Push the project to GitHub.
-2. Create a new site on Netlify.
-3. Connect the GitHub repository.
-4. Build command:
+Netlify can host this static export too.
+
+Build command:
 
 ```txt
 npm run build
 ```
 
-5. Publish directory:
+Publish directory:
 
 ```txt
-.next
+out
 ```
-
-For a static export workflow later, update the Next.js configuration first.
 
 ## Medical disclaimer
 

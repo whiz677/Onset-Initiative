@@ -5,7 +5,11 @@ import { Footer } from "@/components/Footer";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://onsetinitiative.org"),
+  metadataBase: new URL(
+    process.env.GITHUB_PAGES === "true"
+      ? "https://whiz677.github.io/Onset-Initiative/"
+      : "https://onsetinitiative.org"
+  ),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`
