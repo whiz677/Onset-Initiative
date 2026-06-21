@@ -52,7 +52,7 @@ export const seminars: Seminar[] = [
       "Why researchers are investigating birth-cohort and environmental changes",
       "What young people and families should not ignore"
     ],
-    registrationUrl: "",
+    registrationUrl: "https://docs.google.com/forms/d/13wH_LjL30FupsKGo_I8aiqcNDnzdWz_FvwfNNq2M8-A/edit",
     zoomUrl: "",
     flyerUrl: "",
     recordingUrl: "",
