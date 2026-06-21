@@ -53,7 +53,7 @@ export const seminars: Seminar[] = [
       "What young people and families should not ignore"
     ],
     registrationUrl: "https://docs.google.com/forms/d/13wH_LjL30FupsKGo_I8aiqcNDnzdWz_FvwfNNq2M8-A/viewform",
-    zoomUrl: "",
+    zoomUrl: "https://us04web.zoom.us/j/6060273459?pwd=MLYlm8xI91pdTwlm0LaolUaeQYuF41.1",
     flyerUrl: "",
     recordingUrl: "",
     slidesUrl: "",
