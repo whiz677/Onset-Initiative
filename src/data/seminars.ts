@@ -53,7 +53,7 @@ export const seminars: Seminar[] = [
       "What young people and families should not ignore"
     ],
     registrationUrl: "",
-    zoomUrl: "",
+    zoomUrl: "google.com",
     flyerUrl: "",
     recordingUrl: "",
     slidesUrl: "",
