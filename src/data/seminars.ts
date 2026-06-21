@@ -40,7 +40,7 @@ export const seminars: Seminar[] = [
     date: "TBD",
     time: "TBD",
     timezone: "ET",
-    status: "planning",
+    status: "registration_open",
     speakerName: "Speaker TBD",
     speakerTitle: "Cancer epidemiologist / public health researcher",
     speakerAffiliation: "",
